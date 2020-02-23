@@ -1234,6 +1234,33 @@
       // console.log(PI);
     }
   }
+  //21 Arrow functions
+  {
+    /*21.1 Use Arrow Functions to Write Concise Anonymous Functions*/
+    {
+      // /*var magic = function() {
+      //   return new Date();
+      // };*/ //can be shortened to arrow function
+      // /*var magic = () => {
+      //   return new Date();
+      // };*/ //Can be shortened even more
+      // const magic = () => new Date(); //like this
+    }
+    /*21.2 Write Arrow Functions with Parameters */
+    {
+      // /*Old way */
+      // {
+      //   /*var myContact = function(arr1, arr2) {
+      //     return arr1.concat(arr2);
+      //   };*/
+      // }
+      // /*New way */
+      // {
+      //   /*var myContact = (arr1, arr2) => arr1.concat(arr2);*/
+      // }
+      // console.log(myContact([1, 2], [3, 4, 5]));
+    }
+  }
 }
 
 /**/
