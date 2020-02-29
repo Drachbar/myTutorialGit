@@ -1155,9 +1155,6 @@
       // console.log(checkSign(0));
     }
   }
-}
-//ES6
-{
   //20 var vs let and const
   {
     /*20.1 basics */
@@ -1234,7 +1231,10 @@
       // console.log(PI);
     }
   }
-  //21 Arrow functions
+}
+//Hard
+{
+  //21 Arrow functions adn higher order functions
   {
     /*21.1 Use Arrow Functions to Write Concise Anonymous Functions*/
     {
@@ -1260,7 +1260,7 @@
       // }
       // console.log(myContact([1, 2], [3, 4, 5]));
     }
-    /*21.3 Write Higher Order Arrow Functions 1*/
+    /*21.3 Write Higher Order Arrow Functions 1 */
     {
       // const realNumberArray = [4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2];
       // const squareList = arr => {
@@ -1272,15 +1272,62 @@
       // const squaredIntegers = squareList(realNumberArray);
       // console.log(squaredIntegers);
     }
-    /*21.4 Write Higher Order Arrow Functions 2*/
+    /*21.4 Write Higher Order Arrow Functions 2 */
     {
-      const increment = (function() {
-        return function increment(number, value = 1) {
-          return number + value;
-        };
-      })();
-      console.log(increment(5, 3));
-      console.log(increment(2));
+      // const increment = (function() {
+      //   return function increment(number, value = 1) {
+      //     return number + value;
+      //   };
+      // })();
+      // console.log(increment(5, 3));
+      // console.log(increment(2));
+    }
+  }
+  //22 Miscellaneous
+  {
+    /*22.1 Use the Rest (...) Operator with Function Parameters */
+    {
+      // const sum = (function() {
+      //   return function sum(...args) {
+      //     return args.reduce((a, b) => a + b, 0);
+      //   };
+      // })();
+      // console.log(sum(1, 2, 3, 4, 5, 6));
+    }
+    /*22.2 Use the Spread (...) Operator to Evaluate Arrays in-Place */
+    {
+      // const arr1 = ["Jan", "Feb", "Mar", "Apr", "May"];
+      // let arr2;
+      // (function() {
+      //   arr2 = [...arr1];
+      //   arr1[0] = "Potato";
+      // })();
+      // console.log(arr1);
+      // console.log(arr2);
+    }
+  }
+  //23 Use Destructuring Assignment to Assign Variables from Objects
+  {
+    let voxel = {
+      x: 3.6,
+      y: 7.4,
+      z: 6.54
+    };
+    /*Old way*/ {
+      /*
+    let x = voxel.x;
+    let y = voxel.y;
+    let z = voxel.z;
+    console.log(x);
+    console.log(y);
+    console.log(z);
+    */
+    }
+    /* New way */ {
+      const { x: a, y: b, z: c } = voxel;
+      console.log(a);
+      console.log(b);
+      console.log(c);
     }
   }
 }
@@ -1306,7 +1353,7 @@
     // console.log(högstaVärdeEnTransaktion(Värden));
   }
 
-  /* Tilldela array till annan variabel */
+  /* Tilldela array till annan variabel (Se 22.2 för ett bättre sätt)*/
   {
     // let firstArray = [4, 3, 1, 7];
     // let secondArray = [];
