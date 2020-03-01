@@ -1283,7 +1283,7 @@
       // console.log(increment(2));
     }
   }
-  //22 Miscellaneous
+  //22 (...) operator (rest and spread)
   {
     /*22.1 Use the Rest (...) Operator with Function Parameters */
     {
@@ -1306,28 +1306,59 @@
       // console.log(arr2);
     }
   }
-  //23 Use Destructuring Assignment to Assign Variables from Objects
+  //23 Destructuring
   {
-    let voxel = {
-      x: 3.6,
-      y: 7.4,
-      z: 6.54
-    };
-    /*Old way*/ {
-      /*
-    let x = voxel.x;
-    let y = voxel.y;
-    let z = voxel.z;
-    console.log(x);
-    console.log(y);
-    console.log(z);
-    */
+    /*23.1 Use Destructuring Assignment to Assign Variables from Objects */
+    {
+      // let voxel = {
+      //   x: 3.6,
+      //   y: 7.4,
+      //   z: 6.54
+      // };
+      // /*Old way*/ {
+      //   /*
+      // let x = voxel.x;
+      // let y = voxel.y;
+      // let z = voxel.z;
+      // console.log(x);
+      // console.log(y);
+      // console.log(z);
+      // */
+      // }
+      // /* New way */ {
+      //   const { x: a, y: b, z: c } = voxel;
+      //   console.log(a);
+      //   console.log(b);
+      //   console.log(c);
+      // }
+      // const AVG_TEMPERATURES = {
+      //   today: 23.3,
+      //   tomorrow: 25
+      // };
+      // function getTempOfTmrw(avgTemperatures) {
+      //   "use strict";
+      //   const { tomorrow: tempOfTomorrow } = avgTemperatures;
+      //   return tempOfTomorrow;
+      // }
+      // console.log(getTempOfTmrw(AVG_TEMPERATURES));
     }
-    /* New way */ {
-      const { x: a, y: b, z: c } = voxel;
-      console.log(a);
-      console.log(b);
-      console.log(c);
+    /*23.2 Destructuring Assignment with Nested Objects */
+    {
+      // const LOCAL_FORECAST = {
+      //   today: { min: 72, max: 83 },
+      //   tomorrow: { min: 73.3, max: 84.6 }
+      // };
+      // function getMaxOfTmrw(forecast) {
+      //   "use strict";
+      //   const {
+      //     tomorrow: { max: maxOfTomorrow }
+      //   } = forecast;
+      //   return maxOfTomorrow;
+      // }
+      // console.log(getMaxOfTmrw(LOCAL_FORECAST));
+    }
+    /*23.3 Use Destructuring Assignment to Assign Variables from Arrays */
+    {
     }
   }
 }
