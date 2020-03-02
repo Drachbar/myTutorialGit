@@ -1236,8 +1236,7 @@
 {
   //21 Arrow functions adn higher order functions
   {
-    /*21.1 Use Arrow Functions to Write Concise Anonymous Functions*/
-    {
+    /*21.1 Use Arrow Functions to Write Concise Anonymous Functions*/ {
       // /*var magic = function() {
       //   return new Date();
       // };*/ //can be shortened to arrow function
@@ -1246,8 +1245,7 @@
       // };*/ //Can be shortened even more
       // const magic = () => new Date(); //like this
     }
-    /*21.2 Write Arrow Functions with Parameters */
-    {
+    /*21.2 Write Arrow Functions with Parameters */ {
       // /*Old way */
       // {
       //   /*var myContact = function(arr1, arr2) {
@@ -1260,8 +1258,7 @@
       // }
       // console.log(myContact([1, 2], [3, 4, 5]));
     }
-    /*21.3 Write Higher Order Arrow Functions 1 */
-    {
+    /*21.3 Write Higher Order Arrow Functions 1 */ {
       // const realNumberArray = [4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2];
       // const squareList = arr => {
       //   const squaredIntegers = arr
@@ -1272,8 +1269,7 @@
       // const squaredIntegers = squareList(realNumberArray);
       // console.log(squaredIntegers);
     }
-    /*21.4 Write Higher Order Arrow Functions 2 */
-    {
+    /*21.4 Write Higher Order Arrow Functions 2 */ {
       // const increment = (function() {
       //   return function increment(number, value = 1) {
       //     return number + value;
@@ -1285,8 +1281,7 @@
   }
   //22 (...) operator (rest and spread)
   {
-    /*22.1 Use the Rest (...) Operator with Function Parameters */
-    {
+    /*22.1 Use the Rest (...) Operator with Function Parameters */ {
       // const sum = (function() {
       //   return function sum(...args) {
       //     return args.reduce((a, b) => a + b, 0);
@@ -1294,8 +1289,7 @@
       // })();
       // console.log(sum(1, 2, 3, 4, 5, 6));
     }
-    /*22.2 Use the Spread (...) Operator to Evaluate Arrays in-Place */
-    {
+    /*22.2 Use the Spread (...) Operator to Evaluate Arrays in-Place */ {
       // const arr1 = ["Jan", "Feb", "Mar", "Apr", "May"];
       // let arr2;
       // (function() {
@@ -1308,8 +1302,7 @@
   }
   //23 Destructuring
   {
-    /*23.1 Use Destructuring Assignment to Assign Variables from Objects */
-    {
+    /*23.1 Use Destructuring Assignment to Assign Variables from Objects */ {
       // let voxel = {
       //   x: 3.6,
       //   y: 7.4,
@@ -1342,8 +1335,7 @@
       // }
       // console.log(getTempOfTmrw(AVG_TEMPERATURES));
     }
-    /*23.2 Destructuring Assignment with Nested Objects */
-    {
+    /*23.2 Destructuring Assignment with Nested Objects */ {
       // const LOCAL_FORECAST = {
       //   today: { min: 72, max: 83 },
       //   tomorrow: { min: 73.3, max: 84.6 }
@@ -1357,8 +1349,73 @@
       // }
       // console.log(getMaxOfTmrw(LOCAL_FORECAST));
     }
-    /*23.3 Use Destructuring Assignment to Assign Variables from Arrays */
-    {
+    /*23.3 Use Destructuring Assignment to Assign Variables from Arrays */ {
+      // const [z, x, , y] = [1, 2, 3, 4, 5, 6];
+      // console.log(z, x, y);
+      // let a = 8,
+      //   b = 6;
+      // (() => {
+      //   "use strict";
+      //   [a, b] = [b, a];
+      // })();
+      // console.log(a);
+      // console.log(b);
+    }
+    /*23.4 Use Destructuring Assignment with the Rest Operator */ {
+      // const source = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      // function removeFirstTwo(list) {
+      //   const [, , ...arr] = list;
+      //   return arr;
+      // }
+      // const arr = removeFirstTwo(source);
+      // console.log(arr);
+      // console.log(source);
+    }
+    /*23.5 Use Destructuring Assignment to Pass an Object as a Function's Parameters */ {
+      // const stats = {
+      //   max: 56.78,
+      //   standard_deviation: 4.34,
+      //   median: 34.54,
+      //   mode: 23.87,
+      //   min: -0.75,
+      //   average: 35.85
+      // };
+      // // use function argument destructuring
+      // // change code below this line
+      // const half = ({ max, min }) => (max + min) / 2.0;
+      // // change code above this line
+      // console.log(stats); // should be object
+      // console.log(half(stats)); // should be 28.015
+    }
+  }
+  //24 Template Literals
+  {
+    /*24.1 Create Strings using Template Literals */ {
+      //       const person = {
+      //         name: "Zodiac Hasbro",
+      //         age: 56
+      //       };
+      //       const greeting = `Hello, my name is ${person.name}!
+      // I am ${person.age} years old.`;
+      //       console.log(greeting);
+    }
+    /*24.2 CODING CHALLENGE */ {
+      const result = {
+        success: ["max-length", "no-amd", "prefer-arrow-functions"],
+        failure: ["no-var", "var-on-top", "linebreak"],
+        skipped: ["id-blacklist", "no-dup-keys"]
+      };
+      function makeList(arr) {
+        "use strict";
+        const resultDisplayArray = [];
+        for (let i = 0; i < arr.length; i++) {
+          resultDisplayArray.push(`<li class="text-warning">${arr[i]}</li>`);
+        }
+
+        return resultDisplayArray;
+      }
+      const resultDisplayArray = makeList(result.success);
+      console.log(resultDisplayArray);
     }
   }
 }
@@ -1367,8 +1424,7 @@
 
 //Experiment
 {
-  /* hitta högsta värde köp o sälj*/
-  {
+  /* hitta högsta värde köp o sälj*/ {
     // function högstaVärdeEnTransaktion(priserKort) {
     //   let högstaVärdeKort = -Infinity;
     //   for (let a = 0; a < priserKort.length - 1; a++) {
@@ -1384,8 +1440,7 @@
     // console.log(högstaVärdeEnTransaktion(Värden));
   }
 
-  /* Tilldela array till annan variabel (Se 22.2 för ett bättre sätt)*/
-  {
+  /* Tilldela array till annan variabel (Se 22.2 för ett bättre sätt)*/ {
     // let firstArray = [4, 3, 1, 7];
     // let secondArray = [];
     // function arrayToArray(arrayen) {
