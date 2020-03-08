@@ -1428,21 +1428,91 @@
       // console.log(createPerson("Mattias Andersson", 27, "male"));
     }
     /*25.2 Write Concise Declarative Functions */ {
-      const bicycle = {
-        gear: 2,
-        setGear(newGear) {
-          "use strict";
-          this.gear = newGear;
-        }
-        /* //old way
-        setGear: function(newGear) {
-          "use strict";
-          this.gear = newGear;
-        }*/
-      };
-
-      bicycle.setGear(3);
-      console.log(bicycle.gear);
+      // const bicycle = {
+      //   gear: 2,
+      //   setGear(newGear) {
+      //     "use strict";
+      //     this.gear = newGear;
+      //   }
+      //   /* //old way
+      //   setGear: function(newGear) {
+      //     "use strict";
+      //     this.gear = newGear;
+      //   }*/
+      // };
+      // bicycle.setGear(3);
+      // console.log(bicycle.gear);
+    }
+  }
+  //26 Class
+  {
+    /*26.1 Use class Syntax to Define a Constructor Function */ {
+      /*Old way */ {
+        // var SpaceShuttle = function(targetPlanet) {
+        //   this.targetPlanet = targetPlanet;
+        // };
+        // var zeus = new SpaceShuttle("Jupiter");
+        // console.log(zeus.targetPlanet);
+      }
+      /*New way */ {
+        // class SpaceShuttle {
+        //   constructor(targetPlanet) {
+        //     this.targetPlanet = targetPlanet;
+        //   }
+        // }
+        // var oden = new SpaceShuttle("Mars");
+        // console.log(oden.targetPlanet);
+      }
+      {
+        // function makeClass() {
+        //   class frukt {
+        //     constructor(name) {
+        //       this.name = name;
+        //     }
+        //   }
+        //   return frukt;
+        // }
+        // const Vegetable = makeClass();
+        // const carrot = new Vegetable("carrot");
+        // console.log(carrot.name);
+      }
+    }
+    /*26.2 Use getters and setters to Control Access to an object */ {
+      // class Book {
+      //   constructor(author) {
+      //     this._author = author;
+      //   }
+      //   /*getter */
+      //   get writer() {
+      //     return this._author;
+      //   }
+      //   /*setter */
+      //   set writer(updatedAuthor) {
+      //     this._author = updatedAuthor;
+      //   }
+      // }
+      // function makeClass() {
+      //   class Thermostat {
+      //     constructor(temp) {
+      //       this._temp = (5 / 9) * (temp - 32);
+      //     }
+      //     get temperature() {
+      //       return this._temp;
+      //     }
+      //     set temperature(updatedTemp) {
+      //       this._temp = updatedTemp;
+      //     }
+      //   }
+      //   return Thermostat;
+      // }
+      // const Thermostat = makeClass();
+      // const thermos = new Thermostat(100);
+      // let temp = thermos.temperature;
+      // thermos.temperature = 26;
+      // temp = thermos.temperature;
+      // console.log(temp);
+    }
+    /*26.3 Understand the Differences Between import and require */ {
     }
   }
 }

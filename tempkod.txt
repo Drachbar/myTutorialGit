@@ -1,0 +1,10 @@
+/*26.3 Understand the Differences Between import and require */ {
+      //import { capitalizeString } from "./1tutjsExport.js";
+      // require(["./1tutjsExport.js"], function capitalizeString(str) {
+      //   const cap = capitalizeString("hello!");
+      //   console.log(cap);
+      // });
+      console.log("hello");
+      // const cap = capitalizeString("hello!");
+      // console.log(cap);
+    }
