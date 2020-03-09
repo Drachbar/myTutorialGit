@@ -1512,10 +1512,21 @@
       // temp = thermos.temperature;
       // console.log(temp);
     }
-    /*26.3 Understand the Differences Between import and require */ {
-    }
   }
 }
+//27 Require/Import/Export
+//27.1 Require/Import/Export //CANNOT BE IN BRACKETS! " { } "
+// import { capitalizeString } from "./1tutjsExport.js";
+// const cap = capitalizeString("Cannot be in brackets!");
+// console.log(cap);
+//27.2 Use export to Reuse a Code Block
+//27.3 Use * to Import Everything from a File
+// import * as importerat from "./1tutjsExport.js";
+// console.log(importerat.bar);
+//27.4 Create an Export Fallback with export default
+//27.5 Import a Default Export without " { } "
+// import subtract from "./exportDefault.js";
+// console.log(subtract(7, 4));
 
 /**/
 
